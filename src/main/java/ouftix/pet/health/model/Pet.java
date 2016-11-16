@@ -16,6 +16,7 @@ public class Pet {
     private String id;
     private String name;
     private String officialName;
+    private String breed;
     private PetType petType;
     private LocalDate birthDay;
     private LocalDate deathDay;
