@@ -1,4 +1,4 @@
-package ouftix.pet.health.main.ouftx.pet.health.model;
+package ouftix.pet.health.model;
 
 import lombok.Builder;
 import lombok.Singular;

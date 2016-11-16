@@ -1,11 +1,11 @@
-package ouftix.pet.health.main.ouftx.pet.health.model;
+package ouftix.pet.health.model;
+
+import java.time.LocalDate;
+import java.util.List;
 
 import lombok.Builder;
 import lombok.Singular;
 import lombok.ToString;
-
-import java.time.LocalDate;
-import java.util.List;
 
 /**
  * Created by zt974 on 15-Nov-16.
@@ -20,9 +20,9 @@ public class Pet {
     private LocalDate birthDay;
     private LocalDate deathDay;
     @Singular
-    private List<Double> weight;
+    private List<Double> weights;
 
     public enum PetType {
-        DOG, CAT
+	DOG, CAT
     }
 }
