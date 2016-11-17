@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane prefHeight="200.0" prefWidth="481.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ouftix.pet.health.gui.controllers.WeightsController">
+   <columnConstraints>
+      <ColumnConstraints halignment="CENTER" percentWidth="25.0" />
+      <ColumnConstraints percentWidth="25.0" />
+      <ColumnConstraints halignment="CENTER" percentWidth="25.0" />
+      <ColumnConstraints percentWidth="25.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints percentHeight="60.0" />
+      <RowConstraints percentHeight="1.0" />
+      <RowConstraints percentHeight="19.0" />
+      <RowConstraints percentHeight="1.0" />
+      <RowConstraints percentHeight="19.0" />
+   </rowConstraints>
+   <children>
+      <TableView fx:id="weightTableView" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="4">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Label text="Date" GridPane.rowIndex="2" />
+      <DatePicker fx:id="datePicker" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label text="Poids" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <TextField fx:id="weightTextField" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      <GridPane GridPane.columnSpan="4" GridPane.rowIndex="4">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints />
+            <RowConstraints />
+        </rowConstraints>
+         <children>
+            <Button fx:id="addButton" mnemonicParsing="false" text="Ajouter" />
+            <Button fx:id="removeButton" mnemonicParsing="false" text="Supprimer" GridPane.columnIndex="1" />
+            <Button fx:id="updateButton" mnemonicParsing="false" text="Modifier" GridPane.columnIndex="2" />
+         </children>
+      </GridPane>
+   </children>
+</GridPane>

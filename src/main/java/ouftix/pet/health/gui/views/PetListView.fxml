@@ -5,35 +5,44 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.GridPane?>
 
-<GridPane prefHeight="368.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ouftix.pet.health.gui.controllers.PetListController">
-   <columnConstraints>
-      <ColumnConstraints percentWidth="100.0" />
-   </columnConstraints>
-   <rowConstraints>
-      <RowConstraints percentHeight="85.0" />
-      <RowConstraints percentHeight="15.0" />
-   </rowConstraints>
-   <children>
-      <GridPane GridPane.rowIndex="1">
-        <columnConstraints>
-          <ColumnConstraints halignment="CENTER" percentWidth="33.0" />
-          <ColumnConstraints halignment="CENTER" percentWidth="33.0" />
-          <ColumnConstraints halignment="CENTER" percentWidth="33.0" />
-        </columnConstraints>
-        <rowConstraints>
-          <RowConstraints percentHeight="85.0" />
-        </rowConstraints>
-         <children>
-            <Button mnemonicParsing="false" text="Ajouter" GridPane.columnIndex="0" />
-            <Button mnemonicParsing="false" text="Supprimer" GridPane.columnIndex="1" />
-            <Button mnemonicParsing="false" text="Modifier" GridPane.columnIndex="2" />
-         </children>
-      </GridPane>
-      <TableView fx:id="petTableView" prefHeight="200.0" prefWidth="200.0">
-        <columns>
-          <TableColumn prefWidth="75.0" text="Nom" />
-          <TableColumn prefWidth="75.0" text="Type" />
-        </columns>
-      </TableView>
-   </children>
+<GridPane prefHeight="368.0" prefWidth="512.0"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="ouftix.pet.health.gui.controllers.PetListController">
+	<columnConstraints>
+		<ColumnConstraints percentWidth="100.0" />
+	</columnConstraints>
+	<rowConstraints>
+		<RowConstraints percentHeight="85.0" />
+		<RowConstraints percentHeight="15.0" />
+	</rowConstraints>
+	<children>
+		<GridPane GridPane.rowIndex="1">
+			<columnConstraints>
+				<ColumnConstraints halignment="CENTER"
+					percentWidth="33.0" />
+				<ColumnConstraints halignment="CENTER"
+					percentWidth="33.0" />
+				<ColumnConstraints halignment="CENTER"
+					percentWidth="33.0" />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints percentHeight="85.0" />
+			</rowConstraints>
+			<children>
+				<Button mnemonicParsing="false" text="Ajouter"
+					GridPane.columnIndex="0" />
+				<Button mnemonicParsing="false" text="Supprimer"
+					GridPane.columnIndex="1" />
+				<Button mnemonicParsing="false" text="Modifier"
+					GridPane.columnIndex="2" />
+			</children>
+		</GridPane>
+		<TableView fx:id="petTableView" prefHeight="200.0"
+			prefWidth="200.0">
+			<columns>
+				<TableColumn prefWidth="75.0" text="Nom" />
+				<TableColumn prefWidth="75.0" text="Type" />
+			</columns>
+		</TableView>
+	</children>
 </GridPane>

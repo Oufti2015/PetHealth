@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane prefHeight="368.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ouftix.pet.health.gui.controllers.PeopleController">
+   <columnConstraints>
+      <ColumnConstraints percentWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints percentHeight="65.0" />
+   </rowConstraints>
+   <children>
+      <ListView fx:id="peopleListView" prefHeight="200.0" prefWidth="200.0" />
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" >
+			<children>
+				<fx:include fx:id="peopleDetail" source="PeopleDetailView.fxml"
+					AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+					AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+			</children>
+			</AnchorPane>
+   </children>
+</GridPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane prefHeight="768.0" prefWidth="1536.0"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="ouftix.pet.health.gui.controllers.MainController">
+	<columnConstraints>
+		<ColumnConstraints percentWidth="1.0" />
+		<ColumnConstraints percentWidth="50.0" />
+		<ColumnConstraints percentWidth="1.0" />
+		<ColumnConstraints percentWidth="47.0" />
+		<ColumnConstraints percentWidth="1.0" />
+	</columnConstraints>
+	<rowConstraints>
+		<RowConstraints percentHeight="1.0" />
+		<RowConstraints percentHeight="48.0" />
+		<RowConstraints percentHeight="2.0" />
+		<RowConstraints percentHeight="48.0" />
+		<RowConstraints percentHeight="1.0" />
+	</rowConstraints>
+	<children>
+		<AnchorPane prefHeight="200.0" prefWidth="200.0"
+			GridPane.columnIndex="1" GridPane.rowIndex="1">
+			<children>
+				<fx:include fx:id="petList" source="PetListView.fxml"
+					AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+					AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+			</children>
+		</AnchorPane>
+		<AnchorPane prefHeight="200.0" prefWidth="200.0"
+			GridPane.columnIndex="3" GridPane.rowIndex="1">
+			<children>
+				<fx:include fx:id="petDetail" source="PetDetailView.fxml"
+					AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+					AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+			</children>
+		</AnchorPane>
+		<AnchorPane prefHeight="200.0" prefWidth="200.0"
+			GridPane.columnIndex="1" GridPane.rowIndex="3">
+			<children>
+				<fx:include fx:id="people" source="PeopleView.fxml"
+					AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+					AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+			</children>
+		</AnchorPane>
+		<AnchorPane prefHeight="200.0" prefWidth="200.0"
+			GridPane.columnIndex="3" GridPane.rowIndex="3" />
+
+	</children>
+</GridPane>

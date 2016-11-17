@@ -19,4 +19,6 @@ public class PetDetailController {
     private DatePicker birthDatePicker;
     @FXML
     private DatePicker deathDatePixker;
+    @FXML
+    private WeightsController weightsController;
 }

@@ -9,9 +9,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
+import ouftix.pet.health.gui.controllers.MainController;
 
 public class PetHealth extends Application {
-    private static final String VIEWS_MAIN_FXML = "views/Main.fxml";
+    private static final String VIEWS_MAIN_FXML = "views/MainView.fxml";
     Stage primaryStage;
     GridPane rootLayout;
 
@@ -42,7 +43,7 @@ public class PetHealth extends Application {
 	    loader.setLocation(PetHealth.class.getResource(VIEWS_MAIN_FXML));
 	    rootLayout = (GridPane) loader.load();
 
-	    ouftix.pet.health.gui.controllers.MainController controller = loader.getController();
+	    MainController controller = loader.getController();
 	    // controller.setOwner(this);
 
 	    // Show the scene containing the root layout.
