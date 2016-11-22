@@ -8,6 +8,7 @@ import ouftix.pet.health.model.Email;
 import ouftix.pet.health.model.People;
 import ouftix.pet.health.model.Pet;
 import ouftix.pet.health.model.Phone;
+import ouftix.pet.health.model.container.PetHealthContainer;
 
 /**
  * Created by zt974 on 15-Nov-16.
@@ -15,6 +16,10 @@ import ouftix.pet.health.model.Phone;
 public class Cutover {
 
     public static void main(String[] args) {
+	Cutover.cutover();
+    }
+
+    public static void cutover() {
 	People muriel = People.builder()
 		.firstName("Muriel")
 		.lastName("Laurent")
@@ -128,6 +133,11 @@ public class Cutover {
 		.birthDay(LocalDate.of(2011, Month.MAY, 5)).build();
 	Pet muse = Pet.builder().id("4").name("Muse").officialName("Alba'Eyes Muse").petType(Pet.PetType.DOG)
 		.birthDay(LocalDate.of(2013, Month.MAY, 7)).build();
+
+	PetHealthContainer.me().getPets().add(edgar);
+	PetHealthContainer.me().getPets().add(hyuma);
+	PetHealthContainer.me().getPets().add(canelle);
+	PetHealthContainer.me().getPets().add(muse);
 
 	System.out.println("Muriel   " + muriel);
 	System.out.println("Luc      " + luc);

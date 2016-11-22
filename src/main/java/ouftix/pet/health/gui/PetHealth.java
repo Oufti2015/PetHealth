@@ -10,13 +10,18 @@ import javafx.scene.Scene;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import ouftix.pet.health.gui.controllers.MainController;
+import ouftix.pet.health.main.Cutover;
 
 public class PetHealth extends Application {
     private static final String VIEWS_MAIN_FXML = "views/MainView.fxml";
+    public static final String VIEWS_PET_DETAIL_VIEW_FXML = "views/PetDetailView.fxml";
+
     Stage primaryStage;
     GridPane rootLayout;
 
     public static void main(String[] args) {
+	Cutover.cutover();
+
 	launch(args);
     }
 

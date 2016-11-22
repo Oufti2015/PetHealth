@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 import lombok.Builder;
+import lombok.Data;
 import lombok.Singular;
 import lombok.ToString;
 
@@ -12,6 +13,7 @@ import lombok.ToString;
  */
 @ToString
 @Builder
+@Data
 public class Pet {
     private String id;
     private String name;
