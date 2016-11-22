@@ -139,6 +139,10 @@ public class Cutover {
 	PetHealthContainer.me().getPets().add(canelle);
 	PetHealthContainer.me().getPets().add(muse);
 
+	PetHealthContainer.me().getPeoples().add(muriel);
+	PetHealthContainer.me().getPeoples().add(luc);
+	PetHealthContainer.me().getPeoples().add(stephane);
+
 	System.out.println("Muriel   " + muriel);
 	System.out.println("Luc      " + luc);
 	System.out.println("Stéphane " + stephane);

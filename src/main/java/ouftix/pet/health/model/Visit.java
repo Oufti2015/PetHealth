@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 import lombok.Builder;
+import lombok.Getter;
 import lombok.Singular;
 import lombok.ToString;
 
@@ -12,6 +13,7 @@ import lombok.ToString;
  */
 @Builder
 @ToString
+@Getter
 public class Visit {
     private LocalDate date;
     private String description;

@@ -15,6 +15,7 @@ import ouftix.pet.health.main.Cutover;
 public class PetHealth extends Application {
     private static final String VIEWS_MAIN_FXML = "views/MainView.fxml";
     public static final String VIEWS_PET_DETAIL_VIEW_FXML = "views/PetDetailView.fxml";
+    public static final String VIEWS_PEOPLE_DETAIL_VIEW_FXML = "views/PeopleDetailView.fxml";
 
     Stage primaryStage;
     GridPane rootLayout;

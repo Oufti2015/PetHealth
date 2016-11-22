@@ -8,12 +8,11 @@ public class MainController {
     @FXML
     private PetDetailController petDetailController;
     @FXML
-    private PeopleController peopleController;
+    private PeopleListController peopleListController;
 
     @FXML
     public void initialize() {
 	System.out.println("petListController   = " + petListController);
-	System.out.println("petDetailController = " + petDetailController);
-	System.out.println("peopleController    = " + peopleController);
+	System.out.println("peopleListController    = " + peopleListController);
     }
 }

@@ -9,7 +9,7 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import ouftix.pet.health.model.Pet.PetType;
 
-public class ObservablePet {
+public class PetModel {
     private StringProperty id;
     private StringProperty name;
     private StringProperty officialName;
@@ -19,7 +19,7 @@ public class ObservablePet {
     private ObjectProperty<LocalDate> deathDay;
     private ObjectProperty<List<Double>> weights;
 
-    public ObservablePet(ouftix.pet.health.model.Pet pet) {
+    public PetModel(ouftix.pet.health.model.Pet pet) {
 	this.id = new SimpleStringProperty(pet.getId());
 	this.name = new SimpleStringProperty(pet.getName());
 	this.officialName = new SimpleStringProperty(pet.getOfficialName());

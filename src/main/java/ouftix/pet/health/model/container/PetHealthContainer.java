@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import lombok.Getter;
+import ouftix.pet.health.model.People;
 import ouftix.pet.health.model.Pet;
 
 public class PetHealthContainer {
@@ -22,4 +23,7 @@ public class PetHealthContainer {
 
     @Getter
     private List<Pet> pets = new ArrayList<>();
+
+    @Getter
+    private List<People> peoples = new ArrayList<>();
 }

@@ -9,9 +9,9 @@
 	fx:controller="ouftix.pet.health.gui.controllers.MainController">
 	<columnConstraints>
 		<ColumnConstraints percentWidth="1.0" />
-		<ColumnConstraints percentWidth="50.0" />
-		<ColumnConstraints percentWidth="1.0" />
-		<ColumnConstraints percentWidth="47.0" />
+		<ColumnConstraints percentWidth="48.0" />
+		<ColumnConstraints percentWidth="2.0" />
+		<ColumnConstraints percentWidth="48.0" />
 		<ColumnConstraints percentWidth="1.0" />
 	</columnConstraints>
 	<rowConstraints>
@@ -33,21 +33,14 @@
 		<AnchorPane prefHeight="200.0" prefWidth="200.0"
 			GridPane.columnIndex="3" GridPane.rowIndex="1">
 			<children>
-				<fx:include fx:id="petDetail" source="PetDetailView.fxml"
+				<fx:include fx:id="peopleList" source="PeopleListView.fxml"
 					AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
 					AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
 			</children>
 		</AnchorPane>
 		<AnchorPane prefHeight="200.0" prefWidth="200.0"
-			GridPane.columnIndex="1" GridPane.rowIndex="3">
-			<children>
-				<fx:include fx:id="people" source="PeopleView.fxml"
-					AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
-					AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-			</children>
-		</AnchorPane>
+			GridPane.columnIndex="1" GridPane.rowIndex="3" />
 		<AnchorPane prefHeight="200.0" prefWidth="200.0"
 			GridPane.columnIndex="3" GridPane.rowIndex="3" />
-
 	</children>
 </GridPane>

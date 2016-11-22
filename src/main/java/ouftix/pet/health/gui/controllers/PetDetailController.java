@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
-import ouftix.pet.health.gui.models.ObservablePet;
+import ouftix.pet.health.gui.models.PetModel;
 import ouftix.pet.health.model.Pet.PetType;
 
 public class PetDetailController {
@@ -23,8 +23,6 @@ public class PetDetailController {
     @FXML
     private WeightsController weightsController;
 
-    public void setPet(ObservablePet pet) {
-	// TODO Auto-generated method stub
-
+    public void setPet(PetModel pet) {
     }
 }

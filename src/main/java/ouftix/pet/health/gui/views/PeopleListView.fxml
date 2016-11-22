@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane prefHeight="368.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ouftix.pet.health.gui.controllers.PetListController">
+<GridPane prefHeight="368.0" prefWidth="512.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.60" fx:controller="ouftix.pet.health.gui.controllers.PeopleListController">
 	<columnConstraints>
 		<ColumnConstraints percentWidth="100.0" />
 	</columnConstraints>
@@ -31,15 +31,11 @@
 				<Button fx:id="modifyButton" mnemonicParsing="false" onAction="#onModifyButton" text="Modifier" GridPane.columnIndex="2" />
 			</children>
 		</GridPane>
-		<TableView fx:id="petTableView" prefHeight="200.0" prefWidth="200.0">
+		<TableView fx:id="peopleTableView" prefHeight="200.0" prefWidth="200.0">
 			<columns>
-				<TableColumn fx:id="idColumn" prefWidth="40.0" text="Id" />
-				<TableColumn fx:id="nameColumn" prefWidth="75.0" text="Nom" />
-				<TableColumn fx:id="officialNameColumn" prefWidth="150.0" text="Nom officiel" />
-				<TableColumn fx:id="breedColumn" prefWidth="100.0" text="Race" />
-				<TableColumn fx:id="petTypeColumn" prefWidth="75.0" text="Chat/Chien ?" />
-				<TableColumn fx:id="birthDayColumn" prefWidth="75.0" text="Naissance" />
-				<TableColumn fx:id="deathDayColumn" prefWidth="75.0" text="Mort" />
+				<TableColumn fx:id="firstNameColumn" prefWidth="75.0" text="Prénom" />
+				<TableColumn fx:id="lastNameColumn" prefWidth="75.0" text="Nom" />
+				<TableColumn fx:id="professionColumn" prefWidth="150.0" text="Activité" />
 			</columns>
 		</TableView>
 	</children>
