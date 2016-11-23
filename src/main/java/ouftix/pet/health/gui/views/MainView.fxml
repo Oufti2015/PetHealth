@@ -39,7 +39,13 @@
 			</children>
 		</AnchorPane>
 		<AnchorPane prefHeight="200.0" prefWidth="200.0"
-			GridPane.columnIndex="1" GridPane.rowIndex="3" />
+			GridPane.columnIndex="1" GridPane.rowIndex="3">
+			<children>
+				<fx:include fx:id="visitList" source="VisitListView.fxml"
+					AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+					AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+			</children>
+		</AnchorPane>
 		<AnchorPane prefHeight="200.0" prefWidth="200.0"
 			GridPane.columnIndex="3" GridPane.rowIndex="3" />
 	</children>

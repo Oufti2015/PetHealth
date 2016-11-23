@@ -6,12 +6,10 @@ import java.util.List;
 import lombok.Builder;
 import lombok.Data;
 import lombok.Singular;
-import lombok.ToString;
 
 /**
  * Created by zt974 on 15-Nov-16.
  */
-@ToString
 @Builder
 @Data
 public class People {
@@ -23,4 +21,9 @@ public class People {
     private List<Phone> phones = new ArrayList<>();
     @Singular
     private List<Email> emails = new ArrayList<>();
+
+    @Override
+    public String toString() {
+	return firstName + " " + lastName;
+    }
 }

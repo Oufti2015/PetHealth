@@ -8,6 +8,7 @@ import ouftix.pet.health.model.Email;
 import ouftix.pet.health.model.People;
 import ouftix.pet.health.model.Pet;
 import ouftix.pet.health.model.Phone;
+import ouftix.pet.health.model.Visit;
 import ouftix.pet.health.model.container.PetHealthContainer;
 
 /**
@@ -142,6 +143,14 @@ public class Cutover {
 	PetHealthContainer.me().getPeoples().add(muriel);
 	PetHealthContainer.me().getPeoples().add(luc);
 	PetHealthContainer.me().getPeoples().add(stephane);
+
+	PetHealthContainer.me().getVisits().add(Visit.builder()
+		.date(LocalDate.now())
+		.description("Test Visit")
+		.pet(hyuma)
+		.pet(muse)
+		.veterinary(muriel)
+		.build());
 
 	System.out.println("Muriel   " + muriel);
 	System.out.println("Luc      " + luc);
