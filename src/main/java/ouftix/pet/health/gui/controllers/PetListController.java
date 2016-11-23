@@ -73,6 +73,7 @@ public class PetListController {
     public void onModifyButton() {
 	System.out.println("PetListController onModifyButton");
 	PetModel pet = petTableView.getSelectionModel().getSelectedItem();
+	System.out.println("PetListController " + pet.getName());
 	openPetDialog(pet);
     }
 
@@ -81,17 +82,18 @@ public class PetListController {
 	    FXMLLoader loader = null;
 	    loader = new FXMLLoader();
 	    loader.setLocation(PetHealth.class.getResource(PetHealth.VIEWS_PET_DETAIL_VIEW_FXML));
-	    loader.load();
-	    PetDetailController controller = loader.getController();
-	    if (pet != null) {
-		controller.setPet(pet);
-	    }
+	    Parent root = loader.load();
 
-	    Parent root = FXMLLoader.load(PetHealth.class.getResource(PetHealth.VIEWS_PET_DETAIL_VIEW_FXML));
 	    Stage stage = new Stage();
 	    stage.setTitle("Ajouter/Modifier un animal...");
 	    stage.setScene(new Scene(root, 450, 450));
 	    stage.show();
+
+	    PetDetailController controller = loader.getController();
+	    if (pet != null) {
+		controller.setPet(pet);
+	    }
+	    System.out.println("PetListController controller = " + controller);
 	} catch (IOException e) {
 	    e.printStackTrace();
 	}
