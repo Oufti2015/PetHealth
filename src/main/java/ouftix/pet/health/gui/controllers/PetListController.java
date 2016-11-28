@@ -13,6 +13,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import ouftix.pet.health.gui.PetHealth;
 import ouftix.pet.health.gui.models.PetModel;
@@ -87,13 +88,33 @@ public class PetListController {
 	    Stage stage = new Stage();
 	    stage.setTitle("Ajouter/Modifier un animal...");
 	    stage.setScene(new Scene(root, 450, 450));
-	    stage.show();
+	    stage.initModality(Modality.WINDOW_MODAL);
 
 	    PetDetailController controller = loader.getController();
 	    if (pet != null) {
 		controller.setPet(pet);
 	    }
 	    System.out.println("PetListController controller = " + controller);
+	    stage.showAndWait();
+
+	    return controller.isOkClicked();
+
+	    // Stage dialogStage = new Stage();
+	    // dialogStage.setTitle("Edit Person");
+	    // dialogStage.initModality(Modality.WINDOW_MODAL);
+	    // dialogStage.initOwner(primaryStage);
+	    // Scene scene = new Scene(page);
+	    // dialogStage.setScene(scene);
+	    //
+	    // // Set the person into the controller
+	    // PersonEditDialogController controller = loader.getController();
+	    // controller.setDialogStage(dialogStage);
+	    // controller.setPerson(person);
+	    //
+	    // // Show the dialog and wait until the user closes it
+	    // dialogStage.showAndWait();
+	    //
+	    // return controller.isOkClicked();
 	} catch (IOException e) {
 	    e.printStackTrace();
 	}

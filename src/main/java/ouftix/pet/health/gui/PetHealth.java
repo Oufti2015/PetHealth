@@ -2,6 +2,7 @@ package ouftix.pet.health.gui;/**
 			       * Created by zt974 on 15-Nov-16.
 			       */
 
+import java.io.File;
 import java.io.IOException;
 
 import javafx.application.Application;
@@ -31,7 +32,7 @@ public class PetHealth extends Application {
 
 	// set title
 	this.primaryStage = primaryStage;
-	primaryStage.setTitle("Oufti Bank");
+	primaryStage.setTitle("Oufti Pet Health");
 
 	// scene.getStylesheets().add(OuftiBankFX.class.getResource("sigillo.css").toExternalForm());
 
@@ -39,6 +40,10 @@ public class PetHealth extends Application {
 
 	initRootLayout();
 
+	Scene scene = primaryStage.getScene();
+	File f = new File("bankFX.css");
+	scene.getStylesheets().clear();
+	scene.getStylesheets().add("file:///" + f.getAbsolutePath().replace("\\", "/"));
     }
 
     private void initRootLayout() {
